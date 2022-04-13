@@ -1,0 +1,108 @@
+body{
+    background: #f7f7f7;
+    margin: 20px;
+}
+
+#ativar{
+    display: block;
+    margin: 20 auto;
+}
+#modal h2{
+    font-family: Courier;
+    margin: 0px 0px 20px;
+}
+
+#modal label{
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+#modal input{
+    width: 100%;
+    border: 2px solid  #ddd;
+    border-radius: 4px;
+    padding: .5rem;
+    font-size: 1rem;
+    background: #f7f7f7;
+}
+
+#modal button{
+    margin-top: 20px;
+    display: block;
+    font-size: 1rem;
+    padding: .6rem 2rem;
+    border: none;
+    background: #ffb801;
+    border-radius: 5px;
+    color: #402d00;
+    transition: all .5s;
+}
+
+#modal button:hover{
+    opacity: 0.7;
+}
+
+.btnClico{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+#modal{
+    max-width: 300px;
+    padding: 30px;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0,0,0, 0.1);
+    margin: 20px auto;
+    opacity: 0;
+    transform: translateX(-50px);
+   
+}
+
+
+/*  animação */
+
+#modal.animar{
+    animation-name: slid;
+    animation-duration: .3s;
+    animation-timing-function: ease;
+
+    /* essa propriedade deixa  no estado que termina  */
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes slid{
+    
+    to{
+        background-color: aqua;
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* loand */
+
+
+.load{
+    
+    width: 10px;
+    height: 10px;
+    border: 10px solid ;
+    border-radius: 50%;
+    border-top-color: transparent;
+    margin: 0 auto;
+    color: #ffb801;
+    animation: load 1s linear infinite;
+    
+}
+
+@keyframes load{
+    to{
+       
+        transform: rotate(360deg);
+    }
+}
