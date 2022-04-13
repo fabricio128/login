@@ -1,15 +1,13 @@
 
 /*
-Aqui estou adicinando a id ativar e ja estou colocando um evento nele
-depois do pegndo o id modal e adicionando uma class animar nela e tbm tirando a class
-atraves do toggler
+Aqui estou usando um evento para adicionar uma class no modal
  */
 
 ativar.addEventListener('click' , ()=>{
     modal.classList.toggle('animar')
 })
 
-// aqui estou pegando o id logar e ao receber um click estou adicionando uma clas no loand 
+// aqui estou pegando o id logar e adicionando outro evento nele.
 
 logar.addEventListener('click', ()=>{
     load.classList.toggle('load')
